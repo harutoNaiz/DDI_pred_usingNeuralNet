@@ -1,0 +1,448 @@
+[
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "session",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "redirect",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "url_for",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "Graph",
+        "importPath": "py2neo",
+        "description": "py2neo",
+        "isExtraImport": true,
+        "detail": "py2neo",
+        "documentation": {}
+    },
+    {
+        "label": "Node",
+        "importPath": "py2neo",
+        "description": "py2neo",
+        "isExtraImport": true,
+        "detail": "py2neo",
+        "documentation": {}
+    },
+    {
+        "label": "Relationship",
+        "importPath": "py2neo",
+        "description": "py2neo",
+        "isExtraImport": true,
+        "detail": "py2neo",
+        "documentation": {}
+    },
+    {
+        "label": "bcrypt",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "bcrypt",
+        "description": "bcrypt",
+        "detail": "bcrypt",
+        "documentation": {}
+    },
+    {
+        "label": "joblib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "joblib",
+        "description": "joblib",
+        "detail": "joblib",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "Chem",
+        "importPath": "rdkit",
+        "description": "rdkit",
+        "isExtraImport": true,
+        "detail": "rdkit",
+        "documentation": {}
+    },
+    {
+        "label": "Chem",
+        "importPath": "rdkit",
+        "description": "rdkit",
+        "isExtraImport": true,
+        "detail": "rdkit",
+        "documentation": {}
+    },
+    {
+        "label": "Chem",
+        "importPath": "rdkit",
+        "description": "rdkit",
+        "isExtraImport": true,
+        "detail": "rdkit",
+        "documentation": {}
+    },
+    {
+        "label": "Chem",
+        "importPath": "rdkit",
+        "description": "rdkit",
+        "isExtraImport": true,
+        "detail": "rdkit",
+        "documentation": {}
+    },
+    {
+        "label": "DrugInteractionModel",
+        "importPath": "train",
+        "description": "train",
+        "isExtraImport": true,
+        "detail": "train",
+        "documentation": {}
+    },
+    {
+        "label": "extract_and_pad_features",
+        "importPath": "train",
+        "description": "train",
+        "isExtraImport": true,
+        "detail": "train",
+        "documentation": {}
+    },
+    {
+        "label": "DrugInteractionModel",
+        "importPath": "train",
+        "description": "train",
+        "isExtraImport": true,
+        "detail": "train",
+        "documentation": {}
+    },
+    {
+        "label": "extract_and_pad_features",
+        "importPath": "train",
+        "description": "train",
+        "isExtraImport": true,
+        "detail": "train",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "torch",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch",
+        "description": "torch",
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "torch.nn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "LabelEncoder",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "torch.optim",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.optim",
+        "description": "torch.optim",
+        "detail": "torch.optim",
+        "documentation": {}
+    },
+    {
+        "label": "DataLoader",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "TensorDataset",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "hash_password",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def hash_password(password):\n    return bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')\n# Function to predict drug interactions\ndef predict_interaction(model_path, encoder_path, config_path, csv_path, smiles1, smiles2):\n    with open(config_path, 'r') as f:\n        config = json.load(f)\n    input_size = config['input_size']\n    hidden_size = config['hidden_size']\n    output_size = config['output_size']\n    max_smiles_length = config['max_smiles_length']",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "predict_interaction",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def predict_interaction(model_path, encoder_path, config_path, csv_path, smiles1, smiles2):\n    with open(config_path, 'r') as f:\n        config = json.load(f)\n    input_size = config['input_size']\n    hidden_size = config['hidden_size']\n    output_size = config['output_size']\n    max_smiles_length = config['max_smiles_length']\n    device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\n    model = DrugInteractionModel(input_size=input_size, hidden_size=hidden_size, output_size=output_size)\n    model.load_state_dict(torch.load(model_path, map_location=device))",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "get_smiles",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def get_smiles(drug_id):\n    row = df[df['drug_id'] == drug_id]\n    if not row.empty:\n        return row['smiles'].values[0]\n    else:\n        return None  # Handle case where drug_id is not found\n# @app.route('/')\n# def home_page():\n#     return render_template('home.html')\n@app.route('/')",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "home_page",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def home_page():\n    return redirect(url_for('signup'))\n@app.route('/signin', methods=['GET', 'POST'])\ndef signin():\n    if request.method == 'GET':\n        return render_template('signin.html')\n    data = request.json\n    username = data['username']\n    password = data['password']\n    user = graph.run(\"MATCH (u:User {username: $username}) RETURN u\", username=username).data()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "signin",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def signin():\n    if request.method == 'GET':\n        return render_template('signin.html')\n    data = request.json\n    username = data['username']\n    password = data['password']\n    user = graph.run(\"MATCH (u:User {username: $username}) RETURN u\", username=username).data()\n    if user:\n        user = user[0]['u']\n        if bcrypt.checkpw(password.encode('utf-8'), user['password'].encode('utf-8')):",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "signup",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def signup():\n    if request.method == 'GET':\n        return render_template('signup.html')\n    data = request.json\n    username = data['username']\n    password = data['password']\n    hashed_password = hash_password(password)\n    # Check if user already exists\n    existing_user = graph.run(\"MATCH (u:User {username: $username}) RETURN u\", username=username).data()\n    if existing_user:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "predict",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def predict():\n    if 'username' not in session:\n        return redirect(url_for('home_page'))\n    data = request.json\n    drug1 = data['drug1']\n    drug2 = data['drug2']\n    smiles1 = get_smiles(drug1)\n    smiles2 = get_smiles(drug2)\n    model_path = 'states/drug_interaction_model.pth'\n    encoder_path = 'states/label_encoder.joblib'",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "predict_page",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def predict_page():\n    if 'username' not in session:\n        return redirect(url_for('home_page'))\n    return render_template('predict.html')\n@app.route('/admin', methods=['GET'])\ndef admin():\n    return render_template('admin.html')\n@app.route('/admin-auth', methods=['POST'])\ndef admin_auth():\n    data = request.json",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def admin():\n    return render_template('admin.html')\n@app.route('/admin-auth', methods=['POST'])\ndef admin_auth():\n    data = request.json\n    password = data.get('password')  # Use get to safely access JSON data\n    # Replace 'admin_password' with your actual admin password\n    if password == 'tushar':\n        return jsonify({\"success\": True})\n    else:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "admin_auth",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def admin_auth():\n    data = request.json\n    password = data.get('password')  # Use get to safely access JSON data\n    # Replace 'admin_password' with your actual admin password\n    if password == 'tushar':\n        return jsonify({\"success\": True})\n    else:\n        return jsonify({\"success\": False})\n@app.route('/get_graph_data', methods=['GET'])\ndef get_graph_data():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "get_graph_data",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def get_graph_data():\n    query = \"\"\"\n    MATCH (u:User)-[r:TAKES]->(d:Drug)\n    OPTIONAL MATCH (d)-[i:INTERACTS_WITH]->(d2:Drug)\n    RETURN u, r, d, i, d2\n    \"\"\"\n    results = graph.run(query).data()\n    nodes = {}\n    links = []\n    for record in results:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\napp.secret_key = 'tushar' #secreat key\n# Neo4j database connection\ngraph = Graph(\"bolt://localhost:7687\", auth=(\"neo4j\", \"Tushar@123\"))\n# Load the CSV file containing drug SMILES\ndf = pd.read_csv(\"data/drug_smiles.csv\")\n# Function to hash passwords\ndef hash_password(password):\n    return bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')\n# Function to predict drug interactions",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app.secret_key",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app.secret_key = 'tushar' #secreat key\n# Neo4j database connection\ngraph = Graph(\"bolt://localhost:7687\", auth=(\"neo4j\", \"Tushar@123\"))\n# Load the CSV file containing drug SMILES\ndf = pd.read_csv(\"data/drug_smiles.csv\")\n# Function to hash passwords\ndef hash_password(password):\n    return bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')\n# Function to predict drug interactions\ndef predict_interaction(model_path, encoder_path, config_path, csv_path, smiles1, smiles2):",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "graph",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "graph = Graph(\"bolt://localhost:7687\", auth=(\"neo4j\", \"Tushar@123\"))\n# Load the CSV file containing drug SMILES\ndf = pd.read_csv(\"data/drug_smiles.csv\")\n# Function to hash passwords\ndef hash_password(password):\n    return bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')\n# Function to predict drug interactions\ndef predict_interaction(model_path, encoder_path, config_path, csv_path, smiles1, smiles2):\n    with open(config_path, 'r') as f:\n        config = json.load(f)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "df = pd.read_csv(\"data/drug_smiles.csv\")\n# Function to hash passwords\ndef hash_password(password):\n    return bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')\n# Function to predict drug interactions\ndef predict_interaction(model_path, encoder_path, config_path, csv_path, smiles1, smiles2):\n    with open(config_path, 'r') as f:\n        config = json.load(f)\n    input_size = config['input_size']\n    hidden_size = config['hidden_size']",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "predict_interaction",
+        "kind": 2,
+        "importPath": "predict",
+        "description": "predict",
+        "peekOfCode": "def predict_interaction(model_path, encoder_path, config_path, csv_path, smiles1, smiles2):\n    # Load the configuration\n    with open(config_path, 'r') as f:\n        config = json.load(f)\n    input_size = config['input_size']\n    hidden_size = config['hidden_size']\n    output_size = config['output_size']\n    max_smiles_length = config['max_smiles_length']\n    # Load the saved model\n    device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")",
+        "detail": "predict",
+        "documentation": {}
+    },
+    {
+        "label": "extract_and_pad_features",
+        "kind": 2,
+        "importPath": "preprocess_data",
+        "description": "preprocess_data",
+        "peekOfCode": "def extract_and_pad_features(smiles, max_length):\n    mol = Chem.MolFromSmiles(smiles)\n    features = []\n    if mol is not None:\n        for atom in mol.GetAtoms():\n            feature_vector = [\n                atom.GetAtomicNum(),\n                atom.GetDegree(),\n                atom.GetImplicitValence(),\n                atom.GetFormalCharge(),",
+        "detail": "preprocess_data",
+        "documentation": {}
+    },
+    {
+        "label": "preprocess_data",
+        "kind": 2,
+        "importPath": "preprocess_data",
+        "description": "preprocess_data",
+        "peekOfCode": "def preprocess_data(data_path, output_data_path, encoder_path, config_path):\n    # Load data from CSV\n    print(\"Loading data from CSV...\")\n    data = pd.read_csv(data_path)\n    # Extract relevant columns\n    smiles1_list = data['smiles1'].tolist()\n    smiles2_list = data['smiles2'].tolist()\n    interaction_types = data['type'].astype(int).tolist()\n    print(\"Data loaded. Number of entries:\", len(data))\n    # Verify data consistency",
+        "detail": "preprocess_data",
+        "documentation": {}
+    },
+    {
+        "label": "DrugInteractionModel",
+        "kind": 6,
+        "importPath": "train",
+        "description": "train",
+        "peekOfCode": "class DrugInteractionModel(nn.Module):\n    def __init__(self, input_size, hidden_size, output_size):\n        super(DrugInteractionModel, self).__init__()\n        self.fc1 = nn.Linear(input_size, hidden_size)\n        self.relu = nn.ReLU()\n        self.fc2 = nn.Linear(hidden_size, output_size)\n    def forward(self, x):\n        out = self.fc1(x)\n        out = self.relu(out)\n        out = self.fc2(out)",
+        "detail": "train",
+        "documentation": {}
+    },
+    {
+        "label": "extract_and_pad_features",
+        "kind": 2,
+        "importPath": "train",
+        "description": "train",
+        "peekOfCode": "def extract_and_pad_features(smiles, max_length):\n    mol = Chem.MolFromSmiles(smiles)\n    features = []\n    if mol is not None:\n        for atom in mol.GetAtoms():\n            feature_vector = [\n                atom.GetAtomicNum(),\n                atom.GetDegree(),\n                atom.GetImplicitValence(),\n                atom.GetFormalCharge(),",
+        "detail": "train",
+        "documentation": {}
+    },
+    {
+        "label": "train_model",
+        "kind": 2,
+        "importPath": "train",
+        "description": "train",
+        "peekOfCode": "def train_model(preprocessed_data_path, model_path, config_path, batch_size=32):\n    # Load preprocessed data\n    print(\"Loading preprocessed data...\")\n    data = np.load(preprocessed_data_path)\n    X_train = data['X_train']\n    X_test = data['X_test']\n    y_train = data['y_train']\n    y_test = data['y_test']\n    print(\"Preprocessed data loaded.\")\n    print(\"X_train shape:\", X_train.shape)",
+        "detail": "train",
+        "documentation": {}
+    }
+]

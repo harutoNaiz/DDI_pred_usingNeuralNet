@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Interaction Predictor</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #6c5ce7, #ff5e57);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h1 {
+            color: #333333;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 18px;
+            background-color: #6c5ce7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #ff5e57;
+        }
+        .result {
+            margin-top: 20px;
+            text-align: left;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .result h2 {
+            color: #333333;
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .result p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .result .probability {
+            font-weight: bold;
+            color: #6c5ce7;
+        }
+        .result .interaction-type {
+            font-weight: bold;
+            color: #ff5e57;
+        }
+        .result ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        .result li {
+            margin-bottom: 5px;
+        }
+        .loading {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .loading-spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #6c5ce7;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Drug Interaction Predictor</h1>
+        <form id="predict-form">
+            <input type="text" id="drug1" placeholder="Enter Drug 1" value="DB00310"><br>
+            <input type="text" id="drug2" placeholder="Enter Drug 2" value="DB11348"><br>
+            <button type="button" onclick="predictInteraction()">Predict Interaction</button>
+        </form>
+        <div class="loading" id="loading">
+            <div class="loading-spinner"></div>
+            <p>Predicting...</p>
+        </div>
+        <div class="result" id="result"></div>
+    </div>
+    <script>
+        function predictInteraction() {
+            const drug1 = document.getElementById('drug1').value;
+            const drug2 = document.getElementById('drug2').value;
+            const loadingDiv = document.getElementById('loading');
+            const resultDiv = document.getElementById('result');
+
+            // Show loading animation
+            loadingDiv.style.display = 'block';
+            resultDiv.innerHTML = '';
+
+            fetch('/predict', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ drug1, drug2 })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Hide loading animation
+                loadingDiv.style.display = 'none';
+
+                resultDiv.innerHTML = `
+                    <h2>Prediction Results</h2>
+                    <p><span class="probability">Predicted Probability of Interaction:</span> ${data.probability.toFixed(4)}</p>
+                    <p><span class="interaction-type">Predicted Interaction Type:</span> ${data.interaction_type}</p>
+                    <p>Information for Interaction Type ${data.interaction_type}:</p>
+                    <p>
+                        ${data.info.map(item => `${item}`).join('')}
+                    </p>
+                    
+                `;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                // Hide loading animation and show error message
+                loadingDiv.style.display = 'none';
+                resultDiv.innerHTML = '<h2>Error</h2><p>An error occurred while predicting. Please try again.</p>';
+            });
+        }
+    </script>
+</body>
+</html>
