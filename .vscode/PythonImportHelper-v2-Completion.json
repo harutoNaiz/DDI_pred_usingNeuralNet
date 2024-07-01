@@ -385,7 +385,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "app = Flask(__name__)\napp.secret_key = 'tushar' #secreat key\n# Neo4j database connection\ngraph = Graph(\"bolt://localhost:7687\", auth=(\"neo4j\", \"Tushar@123\"))\n# Load the CSV file containing drug SMILES\ndf = pd.read_csv(\"data/drug_smiles.csv\")\n# Function to hash passwords\ndef hash_password(password):\n    return bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')\n# Function to predict drug interactions",
+        "peekOfCode": "app = Flask(__name__)\napp.secret_key = 'tushar' #secreat key\n# Neo4j database connection\ngraph = Graph(\"bolt://localhost:7687\", auth=(\"neo4j\", \"password\"))\n# Load the CSV file containing drug SMILES\ndf = pd.read_csv(\"data/drug_smiles.csv\")\n# Function to hash passwords\ndef hash_password(password):\n    return bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')\n# Function to predict drug interactions",
         "detail": "app",
         "documentation": {}
     },
@@ -394,7 +394,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "app.secret_key = 'tushar' #secreat key\n# Neo4j database connection\ngraph = Graph(\"bolt://localhost:7687\", auth=(\"neo4j\", \"Tushar@123\"))\n# Load the CSV file containing drug SMILES\ndf = pd.read_csv(\"data/drug_smiles.csv\")\n# Function to hash passwords\ndef hash_password(password):\n    return bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')\n# Function to predict drug interactions\ndef predict_interaction(model_path, encoder_path, config_path, csv_path, smiles1, smiles2):",
+        "peekOfCode": "app.secret_key = 'tushar' #secreat key\n# Neo4j database connection\ngraph = Graph(\"bolt://localhost:7687\", auth=(\"neo4j\", \"password\"))\n# Load the CSV file containing drug SMILES\ndf = pd.read_csv(\"data/drug_smiles.csv\")\n# Function to hash passwords\ndef hash_password(password):\n    return bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')\n# Function to predict drug interactions\ndef predict_interaction(model_path, encoder_path, config_path, csv_path, smiles1, smiles2):",
         "detail": "app",
         "documentation": {}
     },
@@ -403,7 +403,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "graph = Graph(\"bolt://localhost:7687\", auth=(\"neo4j\", \"Tushar@123\"))\n# Load the CSV file containing drug SMILES\ndf = pd.read_csv(\"data/drug_smiles.csv\")\n# Function to hash passwords\ndef hash_password(password):\n    return bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')\n# Function to predict drug interactions\ndef predict_interaction(model_path, encoder_path, config_path, csv_path, smiles1, smiles2):\n    with open(config_path, 'r') as f:\n        config = json.load(f)",
+        "peekOfCode": "graph = Graph(\"bolt://localhost:7687\", auth=(\"neo4j\", \"password\"))\n# Load the CSV file containing drug SMILES\ndf = pd.read_csv(\"data/drug_smiles.csv\")\n# Function to hash passwords\ndef hash_password(password):\n    return bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')\n# Function to predict drug interactions\ndef predict_interaction(model_path, encoder_path, config_path, csv_path, smiles1, smiles2):\n    with open(config_path, 'r') as f:\n        config = json.load(f)",
         "detail": "app",
         "documentation": {}
     },

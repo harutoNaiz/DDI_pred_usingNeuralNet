@@ -15,7 +15,7 @@ app = Flask(__name__)
 app.secret_key = 'tushar' #secreat key
 
 # Neo4j database connection
-graph = Graph("bolt://localhost:7687", auth=("neo4j", "Tushar@123"))
+graph = Graph("bolt://localhost:7687", auth=("neo4j", "password"))
 
 # Load the CSV file containing drug SMILES
 df = pd.read_csv("data/drug_smiles.csv")
