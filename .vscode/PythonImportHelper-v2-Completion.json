@@ -444,6 +444,24 @@
         "documentation": {}
     },
     {
+        "label": "DrugInteractionModel",
+        "kind": 6,
+        "importPath": "train",
+        "description": "train",
+        "peekOfCode": "class DrugInteractionModel(nn.Module):\n    def __init__(self, input_size, hidden_size, output_size):\n        super(DrugInteractionModel, self).__init__()\n        self.fc1 = nn.Linear(input_size, hidden_size)\n        self.relu = nn.ReLU()\n        self.fc2 = nn.Linear(hidden_size, output_size)\n    def forward(self, x):\n        out = self.fc1(x)\n        out = self.relu(out)\n        out = self.fc2(out)",
+        "detail": "train",
+        "documentation": {}
+    },
+    {
+        "label": "extract_and_pad_features",
+        "kind": 2,
+        "importPath": "train",
+        "description": "train",
+        "peekOfCode": "def extract_and_pad_features(smiles, max_length):\n    mol = Chem.MolFromSmiles(smiles)\n    features = []\n    if mol is not None:\n        for atom in mol.GetAtoms():\n            feature_vector = [\n                atom.GetAtomicNum(),\n                atom.GetDegree(),\n                atom.GetImplicitValence(),\n                atom.GetFormalCharge(),",
+        "detail": "train",
+        "documentation": {}
+    },
+    {
         "label": "create_graph_from_neo4j",
         "kind": 2,
         "importPath": "train",
@@ -457,16 +475,16 @@
         "kind": 2,
         "importPath": "train",
         "description": "train",
-        "peekOfCode": "def generate_node2vec_embeddings(G, dimensions=64, walk_length=30, num_walks=200, workers=4):\n    node2vec = Node2Vec(G, dimensions=dimensions, walk_length=walk_length, num_walks=num_walks, workers=workers)\n    model = node2vec.fit(window=10, min_count=1, batch_words=4)\n    # Generate embeddings for all nodes\n    node_embeddings = {node: model.wv[node] for node in G.nodes()}\n    return node_embeddings\ndef train_model_with_embeddings(preprocessed_data_path, model_path, config_path, neo4j_uri, neo4j_user, neo4j_password, batch_size=32):\n    # Load preprocessed data\n    print(\"Loading preprocessed data...\")\n    data = np.load(preprocessed_data_path)",
+        "peekOfCode": "def generate_node2vec_embeddings(G, dimensions=64, walk_length=30, num_walks=200, workers=4):\n    node2vec = Node2Vec(G, dimensions=dimensions, walk_length=walk_length, num_walks=num_walks, workers=workers)\n    model = node2vec.fit(window=10, min_count=1, batch_words=4)\n    # Generate embeddings for all nodes\n    node_embeddings = {node: model.wv[node] for node in G.nodes()}\n    return node_embeddings\ndef train_model(preprocessed_data_path, model_path, config_path, neo4j_uri=None, neo4j_user=None, neo4j_password=None, batch_size=32):\n    # Load preprocessed data\n    print(\"Loading preprocessed data...\")\n    data = np.load(preprocessed_data_path)",
         "detail": "train",
         "documentation": {}
     },
     {
-        "label": "train_model_with_embeddings",
+        "label": "train_model",
         "kind": 2,
         "importPath": "train",
         "description": "train",
-        "peekOfCode": "def train_model_with_embeddings(preprocessed_data_path, model_path, config_path, neo4j_uri, neo4j_user, neo4j_password, batch_size=32):\n    # Load preprocessed data\n    print(\"Loading preprocessed data...\")\n    data = np.load(preprocessed_data_path)\n    X_train = data['X_train']\n    X_test = data['X_test']\n    y_train = data['y_train']\n    y_test = data['y_test']\n    print(\"Generating Node2Vec embeddings...\")\n    G = create_graph_from_neo4j(neo4j_uri, neo4j_user, neo4j_password)",
+        "peekOfCode": "def train_model(preprocessed_data_path, model_path, config_path, neo4j_uri=None, neo4j_user=None, neo4j_password=None, batch_size=32):\n    # Load preprocessed data\n    print(\"Loading preprocessed data...\")\n    data = np.load(preprocessed_data_path)\n    X_train = data['X_train']\n    X_test = data['X_test']\n    y_train = data['y_train']\n    y_test = data['y_test']\n    print(\"Preprocessed data loaded.\")\n    print(\"X_train shape:\", X_train.shape)",
         "detail": "train",
         "documentation": {}
     }
