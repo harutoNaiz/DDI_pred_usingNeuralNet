@@ -12,7 +12,7 @@ The potential impact of this system on healthcare is immense, helping prevent ad
 
 From a technical standpoint, the system leverages a robust tech stack:
 Graph Database: Neo4j
-Machine Learning: Python (TensorFlow, Scikit-learn), Graph Embeddings (Node2Vec, DeepWalk)
+Machine Learning: Python (TensorFlow), Graph Embeddings (Node2Vec, DeepWalk)
 Web Application: Flask
 
 The project is open-source, and we warmly invite contributions from the developer community to further enhance this life-saving technology.
